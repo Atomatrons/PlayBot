@@ -16,7 +16,7 @@ Robot.steer_pair.off(brake = True)
 while True:
     Robot.steer_pair.off(brake = True)
     front_distance = Robot.ultra.distance_inches
-    rear_distance = Robot.infared.proximity
+    rear_distance = Robot.infrared.proximity
     if rear_distance is None:
         rear_distance = 1000
 
